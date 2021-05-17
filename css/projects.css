@@ -129,6 +129,7 @@ img{
 	height: auto;
 
 }
+
 img{
 	height: auto;
 	width: 100%;
@@ -212,8 +213,28 @@ img{
 
 @media only screen and (min-device-width : 482px) and (max-device-width : 961px) {
 
+.projects-list{
+	grid-area: container;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-left:30px;
+    padding-right:30px;
+	margin-top: 10vh;
+	display: grid;
+	column-gap: 2vw;
+    row-gap:10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 
+	 	"project1   project2"
+	 	"project3   project4"
+        "project5   project6"
+        "project7   project8"
+        "project9   project10";
+}
 	
-
+.project {
+    height: 40vw;
+   
 
 }
 
