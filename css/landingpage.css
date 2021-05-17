@@ -339,7 +339,7 @@ a {
 
 .computerskills{
 	display: grid;
-	grid-template-columns: 180px 180px 180px;
+	/*grid-template-columns: 180px 180px 180px;*/
 	grid-template-areas: 
 			"figma sketch xd"
 			"ai ps indesign"
@@ -404,13 +404,19 @@ ul{
 
 
 
-@media (max-width: 481px){
 
-h1{
 
-	}
 
-.intro{
+@media only screen and (min-device-width : 0px) and (max-device-width : 481px) {
+
+	.typing {
+    font-size: 1.5em;
+}
+h3{
+	font-size: 1rem;
+}
+
+	.intro{
 
 	margin:0 auto;
 	padding-left: 20px;
@@ -435,7 +441,105 @@ h1{
 
 
 
+/*Education Experiences*/
 
+.education1{
+	display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+			"school"
+			"date"
+			"degree"
+			"gpa";
+}
+
+
+.education2{
+	padding-top: 20px;
+	display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+			"school"
+			"date"
+			"degree"
+			"gpa"
+			"awards";
+}
+
+
+.education3{
+	padding-top: 20px;
+	display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+			"school"
+			"date"
+			"degree"
+			"awards";
+}
+
+
+.freelancer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+			"program"
+			"date-d"
+			"location"
+			"position-d"
+			"detail-list";
+}
+
+
+.intern{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+			"program"
+			"date-d"
+			"location"
+			"position-d"
+			"detail-list";
+}
+
+
+.computerskills{
+	display: grid;
+	/*grid-template-columns: 180px 180px 180px;*/
+	grid-template-areas: 
+			"figma sketch"
+			" xd ai"
+			" ps indesign"
+			"ae principle";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width : 482px) and (max-device-width : 961px) {
+
+	body{
+		line-height: 150%;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+
+	h2{
+		font-size: 1.3rem;
+	}
 
 
 }

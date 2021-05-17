@@ -33,6 +33,12 @@ html,body{
 
 }
 
+.name a:hover{
+	color:orange;
+}
+
+
+
 .navigation{
 	float: right;
 	position: absolute;
@@ -49,7 +55,7 @@ html,body{
 }
 
 .navigation a:hover{
-	color: orange
+	color: orange;
 }
 
 
@@ -124,7 +130,8 @@ h3{
 
 
 
-@media (max-width: 481px){
+@media only screen and (min-device-width : 0px) and (max-device-width : 481px) {
+
 	body{
 		line-height: 150%;
 	}
@@ -137,6 +144,22 @@ h3{
 	}
 
 
+
+
+}
+
+@media only screen and (min-device-width : 482px) and (max-device-width : 961px) {
+
+	body{
+		line-height: 150%;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+
+	h2{
+		font-size: 1.3rem;
+	}
 
 
 }

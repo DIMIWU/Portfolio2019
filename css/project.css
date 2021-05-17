@@ -124,7 +124,9 @@
 
 
 
-@media (max-width: 481px){
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 481px) {
+
 	.container{
 
 	margin-left: 20px;
@@ -140,16 +142,19 @@
 }
 
 
+}
 
 
 
 
 
+@media only screen and (min-device-width : 482px) and (max-device-width : 961px) {
 
-
+	
 
 
 }
+
 
 
 
